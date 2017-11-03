@@ -5,9 +5,8 @@
 #' \url{https://www.census.gov/geo/reference/county-changes.html} for changes
 #' over time.
 #'
-#' @format A data.frame with 1092 rows and 3 variables:
+#' @format A data.frame with 57 rows and 2 variables:
 #' \describe{
-#'   \item{state}{State name.}
 #'   \item{st}{State abbreviation.}
 #'   \item{fips}{state fips code.}
 #' }
@@ -22,9 +21,11 @@
 #'
 #' @format A data.frame with 1092 rows and 4 variables:
 #' \describe{
-#'   \item{state}{State name.}
-#'   \item{st}{State abbreviation.}
-#'   \item{fips}{state fips code.}
+#'   \item{state}{County name.}
+#'   \item{fips}{County fips code.}
+#'   \item{class}{Census fips class. H4 are currently inactive codes, all other
+#'   classifications are active county equivalents. See source documentation
+#'   for more information.}
 #' }
 #' @source U.S. Census Bureau, available at \url{https://www.census.gov/geo/reference/codes/cou.html}.
 "county_fips"

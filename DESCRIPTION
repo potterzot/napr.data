@@ -9,5 +9,9 @@ Description: More about what it does (maybe more than one line)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat,
-    covr
+Suggests:
+    covr,
+    dplyr,
+    readr,
+    testthat
+RoxygenNote: 5.0.1

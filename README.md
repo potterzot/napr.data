@@ -1,0 +1,40 @@
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+[![ORCiD](https://img.shields.io/badge/ORCiD-0000--0002--3410--3732-green.svg)](http://orcid.org/0000-0002-3410-3732) [![Licence](https://img.shields.io/github/license/mashape/apistatus.svg)](http://choosealicense.com/licenses/mit/)
+
+[![Last-changedate](https://img.shields.io/badge/last%20change-2017--11--03-brightgreen.svg)](https://github.com/potterzot/napr.data/commits/master) [![Travis-CI Build Status](https://travis-ci.org/potterzot/napr.data.png?branch=master)](https://travis-ci.org/potterzot/napr.data) [![Coverage Status](https://img.shields.io/codecov/c/github/potterzot/napr.data/master.svg)](https://codecov.io/github/potterzot/napr.data?branch=master)
+
+napr.data
+=========
+
+This respository holds a variety of small usefull data sets that I use regularly. Installing this package in `R` makes those datasets available for use with a simple `data(<DATESET NAME>)` command in `R`.
+
+**Data Repository DOI**:
+
+**Author**: Nicholas Potter (<nicholas.a.potter@wsu.edu>)
+
+Installation
+------------
+
+There are at least two ways to install this package:
+
+**(1)** Install `devtools` with `install.packages("devtools")` from within `Rstudio` and then run:
+
+    devtools::install_github("potterzot/napr.data")
+
+**(2)** Clone this repository and from within the repository directory run:
+
+    R CMD INSTALL .
+
+Contents
+--------
+
+-   `fips`: A list of FIPS codes for states and counties in the U.S.
+
+Licenses
+--------
+
+Text: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Code: [MIT License](https://opensource.org/licenses/MIT), 2017, Nicholas A Potter
+
+Data: See documentation on specific data files.
