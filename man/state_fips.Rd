@@ -22,4 +22,3 @@ states and territories in the U.S. See
 over time.
 }
 \keyword{datasets}
-

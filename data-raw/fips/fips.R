@@ -12,19 +12,23 @@ filename <- "data-raw/fips/national_county.txt"
 download.file(file_url, filename)
 
 # Read the file and save it as package datasets state_fips and county_fips. ----
-print(filename)
 fips_cols <- c("st", "fips_st", "fips_cty", "county", "fips_cl")
 cou <- readr::read_csv(filename, col_names = fips_cols)
 
-# State fips dataset
+## State fips dataset
 state_fips <- cou %>%
   select(st, fips_st) %>%
   distinct() %>%
   rename(fips = fips_st)
 
+# From somewhere, but just gives us state names
+state_names <- readr::read_csv("data-raw/fips/state_names.txt")
+
+state_fips <- left_join(state_fips, select(state_names, state, fips), by="fips")
+
 devtools::use_data(state_fips, overwrite = TRUE)
 
-# County fips dataset
+## County fips dataset
 county_fips <- cou %>%
   mutate(fips = paste0(fips_st, fips_cty)) %>%
   select(county, fips, fips_cl) %>%
