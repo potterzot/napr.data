@@ -12,5 +12,6 @@ readme: README.Rmd
 fips: data-raw/fips/fips.R
 	Rscript $<
 	R -e 'devtools::document()'
-#	Rscript -e 'rpkg/data-raw/fips/fips.R'
-#	R -e 'devtools::document()'
+
+install: doc
+	R -e 'devtools::install()'

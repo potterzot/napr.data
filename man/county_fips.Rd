@@ -24,3 +24,4 @@ A data.frame containing the fips code for counties in the U.S. See
 over time.
 }
 \keyword{datasets}
+
